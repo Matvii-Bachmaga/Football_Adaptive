@@ -26,8 +26,6 @@ body {
 
 .flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -98,8 +96,11 @@ main {
     margin: 20px 0;
 }
 
-.info p {
+.info {
     max-width: 595px;
+}
+
+.info p {
     margin-bottom: 20px;
     line-height: 21px;
     color: #343434;
@@ -115,7 +116,7 @@ main {
     padding-left: 5px;
 }
 
-.nav h2 {
+.nav p {
     display: inline-block;
     font-size: 18px;
     line-height: 7px;
@@ -138,9 +139,7 @@ main {
 
 .nav a:hover {
     text-decoration: none;
-    padding: 0 40px;
-    color: #fff;
-    background-color: #343434;
+    color: black;
 }
 
 footer {
