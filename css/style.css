@@ -58,15 +58,12 @@ header i {
 }
 
 .contacts a {
+    display: block;
+    margin-bottom: 10px;
     font-size: 22px;
     color: #39930d;
     font-family: "Arial";
     text-decoration: none;
-    display: block;
-}
-
-.contacts {
-    text-align: center;
 }
 
 main {
@@ -113,23 +110,21 @@ main {
 
 .nav ul {
     list-style: none;
-    padding-left: 5px;
 }
 
 .nav p {
-    display: inline-block;
     font-size: 18px;
     line-height: 7px;
-    color: #ffffff;
+    color: #fff;
     font-family: "Arial";
-    min-width: 300px;
     padding: 18px 20px;
     background-color: #39930d;
-    margin: 0 0 10px -20px;
+    margin: 0 0 10px 0;
 }
 
 .nav a {
     display: block;
+    padding: 0 20px;
     line-height: 30px;
     text-transform: uppercase;
     color: #39930d;
@@ -153,22 +148,55 @@ footer p {
     font-family: "Arial";
 }
 
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 611px) {
     .flex {
         justify-content: space-between;
     }
-
     .contacts {
         text-align: right;
     }
 }
 
-@media screen and (min-width: 930px) {
-    .nav h2 {
-        margin: 0 0 10px 0;
+@media screen and (min-width: 320px) {
+    .nav p {
+        min-width: 270px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .nav p {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    header p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 410px) {
+    header p {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        padding-bottom: 75px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    header img {
+        margin-bottom: 20px;
     }
 
-    .nav a {
-        padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    header img {
+        margin-bottom: 0px;
     }
+
 }
